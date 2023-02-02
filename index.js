@@ -1,6 +1,7 @@
 //require('dotenv').config();
 // https://github.com/oracle/node-oracledb/blob/main/examples/example.js
 // https://www.oracle.com/webfolder/technetwork/tutorials/obe/cloud/apaas/node/node-employee-service/node-employee-service.html
+// https://www.oracle.com/in/database/technologies/instant-client/linux-x86-64-downloads.html
 const oracledb = require('oracledb');
 const dbconfig = require('./dbconfig');
 const express = require('express');
