@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
         console.log(connection);
         if (err) {
             console.error(err.message);
-            response.status(500).send("Error connecting to DB");
+            res.status(500).send("Error connecting to DB");
             return;
         } else {
             let sql = `SELECT * FROM system.sample`;
