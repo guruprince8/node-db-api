@@ -1,4 +1,4 @@
-// ref link - https://www.oracle.com/webfolder/technetwork/tutorials/obe/cloud/apaas/node/node-employee-service/node-employee-service.html
+// ref link - 
 // express , oracle db and uuid imports
 const express = require('express');
 const oracledb = require('oracledb');
@@ -54,7 +54,7 @@ empservices.get('/v1/employee/all', (req, res) => {
             });
 
         } else {
-            response.status(500).send("Error connecting to DB");
+            res.status(500).send("Error connecting to DB");
         }
     });
 });
