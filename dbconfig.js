@@ -1,5 +1,6 @@
 const os = require("os");
 const dbconfig = { };
+
 if(process.env.NODE_ORACLEDB_USER)
     dbconfig.user = process.env.NODE_ORACLEDB_USER;
 else
